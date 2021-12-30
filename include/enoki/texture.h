@@ -693,7 +693,6 @@ private:
         using Scalar = scalar_t<T>;
         using InterpOffset = Array<Int32, ipow(Length, Dimension)>;
         using InterpPosI = Array<InterpOffset, Dimension>;
-
         static_assert(
                 array_size_v<T> == Dimension &&
                 std::is_integral_v<Scalar> &&
